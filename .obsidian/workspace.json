@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "c087fd3d5ad0d2f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "1b9cb8f51911721c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41c54069817660e5",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1a0fe1b63f26db98",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2933be5bab62bb9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c1eac588a55ae17",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "39ae8855836746c0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dfbfc79b3ad8dbf1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7ff448468623d5e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "48d44873b26415c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c33af515e9816455",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "readme.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "98926aad14414eba",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "readme.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "01b03f7b562c2916",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "61771ab0c77fe194",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "readme.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "7c1eac588a55ae17",
+  "lastOpenFiles": [
+    "cmake-build-debug/CMakeFiles/study_algorithm.dir/main.cpp-e01db76b.o.tmp",
+    "cmake-build-debug/CMakeFiles/study_algorithm.dir/main.cpp-9349db8a.o.tmp",
+    "cmake-build-debug/CMakeFiles/study_algorithm.dir/main.cpp.o",
+    "cmake-build-debug/CMakeFiles/study_algorithm.dir/main.cpp-ce59f40b.o.tmp",
+    "cmake-build-debug/CMakeFiles/study_algorithm.dir/main.cpp-b5e317d2.o.tmp",
+    "readme.md",
+    "atcoder/abc360_e/readme.md",
+    "BOJ/24042/readme.md",
+    "BOJ/2507/readme.md",
+    "leetcode/4/readme.md",
+    "leetcode/715/readme.md",
+    "codeforces/1923/B/readme.md",
+    "codeforces/1923/D/readme.md",
+    "codeforces/1923/C/readme.md",
+    "codeforces/1923/A/readme.md",
+    "BOJ/9240/readme.md",
+    "BOJ/9249/readme.md",
+    "BOJ/17408/readme.md",
+    "BOJ/15967/readme.md",
+    "BOJ/13869/readme.md",
+    "BOJ/18227/readme.md",
+    "BOJ/9248/readme.md",
+    "BOJ/5012/readme.md",
+    "BOJ/2631/readme.md",
+    "BOJ/15683/readme.md",
+    "BOJ/13925/readme.md",
+    "BOJ/3830/readme.md",
+    "BOJ/15480/readme.md",
+    "BOJ/13511/readme.md",
+    "BOJ/13144/readme.md",
+    "study_algorithm/atcoder/abc360_e",
+    "BOJ/1",
+    "study_algorithm/tmp.cpp",
+    "study_algorithm/main.cpp",
+    "study_algorithm/leetcode/715",
+    "study_algorithm/leetcode/4",
+    "study_algorithm/atcoder/abc319_g/img.png",
+    "study_algorithm/BOJ/1866/odd_graph.png",
+    "study_algorithm/BOJ/1866/even_graph.png",
+    "study_algorithm/BOJ/1492/img.png"
+  ]
+}

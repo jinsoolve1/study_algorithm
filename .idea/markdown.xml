@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MarkdownSettings">
+    <option name="customStylesheetText" value="/* Markdown 셀의 폰트와 크기 설정 */&#10;body {&#10;    font-family: 'Jetbrains Mono', monospace;  /* Jetbrains Mono 폰트 설정 */&#10;    font-size: 15px;  /* 글꼴 크기 설정 */&#10;}&#10;&#10;/* Markdown 셀 내 코드 블록의 폰트 설정 */&#10;pre, code {&#10;    font-family: 'Jetbrains Mono', monospace;  /* Jetbrains Mono 폰트 설정 */&#10;}&#10;&#10;/* Markdown 셀 내 링크의 스타일 설정 */&#10;a {&#10;    color: #0366d6;  /* 링크 색상 설정 */&#10;    text-decoration: underline;  /* 밑줄 추가 */&#10;}&#10;&#10;/* Markdown 셀 내 헤더(제목)의 폰트 크기 설정 */&#10;h1, h2, h3, h4, h5, h6 {&#10;    font-size: 1.5em;  /* 헤더(제목)의 기본 글꼴 크기 설정 */&#10;}&#10;&#10;/* 기타 Markdown 요소의 스타일 설정 */&#10;/* 예: 리스트, 인용문 등 */&#10;" />
+  </component>
+</project>

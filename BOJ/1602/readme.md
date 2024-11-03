@@ -1,0 +1,95 @@
+## [백준 1602 - 도망자 원숭이](https://www.acmicpc.net/problem/1602)
+
+### 알고리즘
+- 플로이드-워셜
+- 그래프 이론(최단경로)
+
+### 풀이
+1. 플로이드-워셜 알고리즘을 이용해서 임의의 노드에서 임의의 노드까지의 경로 중 최단거리를 구한다.
+2. 플로이드-워셜에서 주의할 점은 노드에 가중치가 존재하므로, 가중치가 적은 정점부터 방문해서 최단거리를 갱신해야 한다.  
+   dist[i][j]를 dist[i][k] + dist[k][j]로 갱신한다고 하자.  
+   이전까지의 k들은 현재 k보다 노드 가중치가 더 적기 때문에 만약 현재 k에서 갱신한다면 노드 k의 가중치가 현재 경로의 가중치 중 최대가 됨을 알 수 잇기 때문이다.
+
+플로이드-워셜 알고리즘을 정확히 이해해야 풀 수 있는 문제다.
+
+
+```c++
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <utility>
+#include <string>
+#include <cstring>
+#include <vector>
+#include <tuple>
+#include <stack>
+#include <queue>
+#include <deque>
+#include <list>
+#include <map>
+#include <unordered_map>
+#include <set>
+#include <unordered_set>
+#include <climits>
+
+#define endl "\n"
+#define INF 987654321
+#define INF2 2147483647
+#define all(v) (v).begin(), (v).end()
+
+using namespace std;
+using ll = long long;
+using pii = pair<int, int>;
+using pll = pair<ll, ll>;
+using ti3 = tuple<int, int, int>;
+
+int N, M, Q;
+vector<int> tm, idx;
+vector<pii> sorted;
+vector<vector<pii>> dist;
+
+int main(void) {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    cin >> N >> M >> Q;
+
+    dist = vector<vector<pii>>(N+1, vector<pii>(N+1, pii(INF,0)));
+
+    for(int i=1; i<=N; i++) {
+        int x; cin >> x;
+        sorted.emplace_back(x,i);
+    }
+    sort(all(sorted));
+    tm.resize(N+1); idx.resize(N+1);
+    for(int i=0; i<sorted.size(); i++) {
+        tm[i+1] = sorted[i].first;
+        idx[sorted[i].second] = i+1;
+    }
+    while(M--) {
+        int a, b, d; cin >> a >> b >> d;
+        a = idx[a], b = idx[b];
+        dist[a][b] = dist[b][a] = pii(d,max(tm[a],tm[b]));
+    }
+
+    for(int k=1; k<=N; k++) {
+        for(int i=1; i<=N; i++) {
+            for(int j=1; j<=N; j++) {
+                pii res = pii(dist[i][k].first + dist[k][j].first, max(dist[i][k].second, dist[k][j].second));
+                if(dist[i][j].first + dist[i][j].second > res.first + res.second) dist[i][j] = res;
+            }
+        }
+    }
+
+    while(Q--) {
+        int s, t; cin >> s >> t;
+        s = idx[s], t = idx[t];
+        if(dist[s][t].first == INF) cout << "-1\n";
+        else cout << dist[s][t].first + dist[s][t].second << endl;
+    }
+
+
+    return 0;
+}
+```
